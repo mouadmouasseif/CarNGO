@@ -76,9 +76,9 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/Image/logo.png" />
-        <link rel="apple-touch-icon" href="/Image/logo.png" />
-        <link rel="shortcut icon" href="/Image/logo.png" />
+        <link rel="icon" href="/Image/logo.jpg" type="image/jpg" />
+        <link rel="apple-touch-icon" href="/Image/logo.jpg" />
+        <link rel="shortcut icon" href="/Image/logo.jpg" />
         <link rel="manifest" href="/manifest.webmanifest" />
       </head>
       <body
@@ -88,7 +88,6 @@ export default function RootLayout({
         {children}
         <Footer />
         <WhatsappChat />
-        <Footer />
       </body>
     </html>
   );
