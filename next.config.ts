@@ -1,16 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  output: 'export', // Active l'exportation statique
   images: {
-    unoptimized: true,
+    unoptimized: true, // Obligatoire avec 'export'
   },
   eslint: {
     ignoreDuringBuilds: true,
   },
+  // Retirer forceStatic, car non supporté
   experimental: {
-    // Pour éviter les erreurs dynamiques lors de l'export statique
-    forceStatic: true,
+    // Laisser vide ou inclure d'autres options valides si nécessaire
   }
 };
 
