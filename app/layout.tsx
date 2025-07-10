@@ -1,16 +1,15 @@
+// app/layout.tsx
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Menue from "@/components/Menus";
 import WhatsappChat from "@/components/WhatsappChat";
-import "./globals.css";
-// app/layout.tsx ou dans app/about/page.tsx avec Head
-
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Car N Go - Location de voiture au Maroc",
-  description: "Louez une voiture facilement avec Car N Go, votre agence de confiance à Rabat. Véhicules récents, prix compétitifs, service client réactif.",
+  description:
+    "Louez une voiture facilement avec Car N Go, votre agence de confiance à Rabat. Véhicules récents, prix compétitifs, service client réactif.",
   keywords: [
     "location voiture Maroc",
     "Car N Go",
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
     "voiture à louer Rabat",
     "agence location voiture",
     "location voiture aéroport Rabat",
-    "voiture avec chauffeur Maroc"
+    "voiture avec chauffeur Maroc",
   ],
   authors: [{ name: "Car N Go", url: "https://carngo.ma" }],
   creator: "Car N Go",
@@ -28,12 +27,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://carngo.ma",
-    title: "Car N Go - Location de voiture à Rabat-Sale, Maroc",
-    description: "Découvrez les meilleurs tarifs pour la location de voiture à Rabat avec Car N Go. Large choix de véhicules pour tous vos déplacements.",
+    title: "Car N Go - Location de voiture à Rabat-Salé, Maroc",
+    description:
+      "Découvrez les meilleurs tarifs pour la location de voiture à Rabat avec Car N Go. Large choix de véhicules pour tous vos déplacements.",
     siteName: "Car N Go",
     images: [
       {
-        url: "https://carngo.ma/logo.png", // remplace par le bon chemin
+        url: "https://carngo.ma/logo.png",
         width: 800,
         height: 600,
         alt: "Car N Go - logo",
@@ -44,17 +44,17 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Car N Go - Location de voiture au Maroc",
-    description: "Louez facilement votre voiture avec Car N Go. Qualité, service et prix imbattables à Rabat.",
+    description:
+      "Louez facilement votre voiture avec Car N Go. Qualité, service et prix imbattables à Rabat.",
     images: ["https://carngo.ma/logo.png"],
-    creator: "@carngo_ma", // si vous avez un compte Twitter
+    creator: "@carngo_ma",
   },
   icons: {
-    icon: "Image/logo.png", // favicone (32x32 ou 48x48)
-    shortcut: "Image/logo.png",
-    apple: "Image/logo.png",
+    icon: "/Image/logo.png",
+    shortcut: "/Image/logo.png",
+    apple: "/Image/logo.png",
   },
 };
-
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -66,29 +66,21 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
-
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Car N Go - Location de voiture au Maroc" />
-        <link rel="icon" href="Image/logo.png" />
-        <link rel="apple-touch-icon" href="Image/logo.png" />
-        <link rel="shortcut icon" href="Image/logo.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Geist+Sans:wght@100;200;300;400;500;600;700;800;900&family=Geist+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-        />
-        <title>Car N Go - Location de voiture au Maroc</title>          
-      </head> 
+        <link rel="icon" href="/Image/logo.png" />
+        <link rel="apple-touch-icon" href="/Image/logo.png" />
+        <link rel="shortcut icon" href="/Image/logo.png" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+      </head>
       <body
         className={`bg-black text-white ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -96,6 +88,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <WhatsappChat />
+        <Footer />
       </body>
     </html>
   );

@@ -213,13 +213,13 @@ export default function CarListing() {
                 </h3>
                 <p className="text-sm text-gray-400 mb-4">{car.description}</p>
                 <a
-  href={`https://wa.me/212691145520?text=${encodeURIComponent(
-    `Bonjour, je souhaite réserver la voiture "${car.name}".\nDescription: ${car.description}\nMerci de me contacter pour plus d'informations.`
-  )}`}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="block"
->
+                href={`https://wa.me/212691145520?text=${encodeURIComponent(
+                  `Bonjour, je souhaite réserver la voiture "${car.name}".\nDescription: ${car.description}\nMerci de me contacter pour plus d'informations.`
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
                  <Button className="bg-yellow-500 hover:bg-yellow-300 text-white hover:text-gray-500 w-full">
     RÉSERVER SUR WHATSAPP
   </Button>

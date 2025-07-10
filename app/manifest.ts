@@ -1,0 +1,93 @@
+import type { MetadataRoute } from "next"
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: "CarRent Morocco - Location de Voitures",
+    short_name: "CarRent Morocco",
+    description:
+      "Agence de location de voitures au Maroc. Rabat, Salé, Kénitra. Dacia Logan, Renault Clio, Peugeot 208, Toyota Yaris.",
+    start_url: "/",
+    display: "standalone",
+    background_color: "#ffffff",
+    theme_color: "#1e40af",
+    orientation: "portrait-primary",
+    scope: "/",
+    lang: "fr-MA",
+    categories: ["business", "travel", "automotive"],
+
+    icons: [
+      {
+        src: "/icon-72x72.png",
+        sizes: "72x72",
+        type: "image/png",
+        purpose: "maskable any",
+      },
+      {
+        src: "/icon-96x96.png",
+        sizes: "96x96",
+        type: "image/png",
+        purpose: "maskable any",
+      },
+      {
+        src: "/icon-128x128.png",
+        sizes: "128x128",
+        type: "image/png",
+        purpose: "maskable any",
+      },
+      {
+        src: "/icon-144x144.png",
+        sizes: "144x144",
+        type: "image/png",
+        purpose: "maskable any",
+      },
+      {
+        src: "/icon-152x152.png",
+        sizes: "152x152",
+        type: "image/png",
+        purpose: "maskable any",
+      },
+      {
+        src: "/icon-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+        purpose: "maskable any",
+      },
+      {
+        src: "/icon-384x384.png",
+        sizes: "384x384",
+        type: "image/png",
+        purpose: "maskable any",
+      },
+      {
+        src: "/icon-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+        purpose: "maskable any",
+      },
+    ],
+
+    shortcuts: [
+      {
+        name: "Réserver une voiture",
+        short_name: "Réserver",
+        description: "Réservez votre voiture de location rapidement",
+        url: "/reservation",
+        icons: [{ src: "/shortcut-reservation.png", sizes: "96x96" }],
+      },
+      {
+        name: "Notre flotte",
+        short_name: "Flotte",
+        description: "Découvrez nos voitures disponibles",
+        url: "/flotte",
+        icons: [{ src: "/shortcut-cars.png", sizes: "96x96" }],
+      },
+      {
+        name: "Contact",
+        short_name: "Contact",
+        description: "Contactez notre agence",
+        url: "/contact",
+        icons: [{ src: "/shortcut-contact.png", sizes: "96x96" }],
+      },
+    ],
+  }
+}
