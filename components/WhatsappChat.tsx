@@ -36,7 +36,7 @@ export default function WhatsappChat() {
             className="flex items-center justify-between mt-4 px-4 py-2 bg-black text-white rounded-md hover:bg-yellow-600"
           >
             <span className="flex items-center gap-2">
-              <img src="Image/chat.png" alt="whatsapp" className="w-6 h-6" />
+              <img src="images/chat.png" alt="whatsapp" className="w-6 h-6" />
               Chat With Us
             </span>
             <ChevronRight size={18} />

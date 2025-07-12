@@ -8,7 +8,7 @@ import CarListing from "@/components/Cars";
 import Contact from "@/components/Contact";
 
 export default function HomePage() {
-  const [currentCar, setCurrentCar] = useState("/Image/Car.png");
+  const [currentCar, setCurrentCar] = useState("/images/Car.png");
   const [fade, setFade] = useState(true);
 
   useEffect(() => {
@@ -16,9 +16,9 @@ export default function HomePage() {
       setFade(false); // début fade-out
       setTimeout(() => {
         setCurrentCar((prev) => {
-          if (prev === "/Image/Car.png") return "/Image/Car2.png";
-          else if (prev === "/Image/Car2.png") return "/Image/Car3.png";
-          else return "/Image/Car.png";
+          if (prev === "/images/Car.png") return "/images/Car2.png";
+          else if (prev === "/images/Car2.png") return "/images/Car3.png";
+          else return "/images/Car.png";
         });
         setFade(true); // fade-in
       }, 500);

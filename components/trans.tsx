@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
 const images = [
-  "/Image/Car.png",
-  "/Image/Car2.png",
-  "/Image/Car3.png",
+  "/images/Car.png",
+  "/images/Car2.png",
+  "/images/Car3.png",
 ];
 
 export default function CarSlideshow() {

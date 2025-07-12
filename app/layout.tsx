@@ -50,9 +50,9 @@ export const metadata: Metadata = {
     creator: "@carngo_ma",
   },
   icons: {
-    icon: "/Image/logo.png",
-    shortcut: "/Image/logo.png",
-    apple: "/Image/logo.png",
+    icon: "/images/logo.png",
+    shortcut: "/images/logo.png",
+    apple: "/images/logo.png",
   },
 };
 
@@ -76,9 +76,9 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/Image/logo.jpg" type="image/jpg" />
-        <link rel="apple-touch-icon" href="/Image/logo.jpg" />
-        <link rel="shortcut icon" href="/Image/logo.jpg" />
+        <link rel="icon" href="/images/logo.jpg" type="image/jpg" />
+        <link rel="apple-touch-icon" href="/images/logo.jpg" />
+        <link rel="shortcut icon" href="/images/logo.jpg" />
         <link rel="manifest" href="/manifest.webmanifest" />
       </head>
       <body

@@ -81,11 +81,11 @@ export const metadata: Metadata = {
 
   icons: {
     icon: [
-      { url: "/Image/logo.jpg", sizes: "any" },
-      { url: "/Image/logo.jpg", sizes: "16x16", type: "image/jpg" },
-      { url: "/Image/logo.jpg", sizes: "32x32", type: "image/jpg" },
+      { url: "/images/logo.jpg", sizes: "any" },
+      { url: "/images/logo.jpg", sizes: "16x16", type: "image/jpg" },
+      { url: "/images/logo.jpg", sizes: "32x32", type: "image/jpg" },
     ],
-    apple: [{ url: "/Image/loho.jpg", sizes: "180x180", type: "image/png" }],
+    apple: [{ url: "/images/loho.jpg", sizes: "180x180", type: "image/png" }],
     other: [
       {
         rel: "mask-icon",
