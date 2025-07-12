@@ -34,7 +34,7 @@ const cars = [
   },
   {
     name: "Dacia Logan",
-    image: "/cars/dacia-logan.png",
+    image: "/cars/Dacia-logan.png",
     description: "Berline économique et spacieuse.",
   },
   {
