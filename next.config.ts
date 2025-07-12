@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  output: "export", // permet de faire un export statique
+const nextConfig: NextConfig = { // permet de faire un export statique
   images: {
     unoptimized: true, // obligatoire pour que next/image fonctionne sans serveur
   },
