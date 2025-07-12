@@ -1,16 +1,27 @@
 'use client';
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-black text-white font-sans px-6 py-12">
-      <section className="max-w-5xl mx-auto">
-        <h1 className="text-4xl font-bold text-yellow-500 text-center mb-10">
-          À propos de Car N Go
-        </h1>
+      <section className="max-w-5xl mx-auto text-center mb-10">
+        {/* Logo + nom entreprise */}
+        <div className="flex flex-col items-center gap-4">
+          <Image
+            src="/images/logo.jpg" // Assure-toi que l'image est bien dans public/images
+            alt="Logo Car N Go"
+            width={120}
+            height={120}
+            className="rounded-full border-4 border-yellow-400 shadow-md"
+          />
+          <h1 className="text-4xl font-bold text-yellow-500">À propos de Car N Go</h1>
+        </div>
+      </section>
 
-        <Card className="bg-zinc-900 text-white shadow-lg mb-8">
+      <section className="max-w-5xl mx-auto space-y-8">
+        <Card className="bg-zinc-900 text-white shadow-lg">
           <CardHeader>
             <CardTitle className="text-2xl text-yellow-400">Notre Mission</CardTitle>
           </CardHeader>
@@ -19,7 +30,7 @@ export default function AboutPage() {
           </CardContent>
         </Card>
 
-        <Card className="bg-zinc-900 text-white shadow-lg mb-8">
+        <Card className="bg-zinc-900 text-white shadow-lg">
           <CardHeader>
             <CardTitle className="text-2xl text-yellow-400">Pourquoi nous choisir ?</CardTitle>
           </CardHeader>
@@ -34,12 +45,25 @@ export default function AboutPage() {
           </CardContent>
         </Card>
 
+        {/* Coordonnées */}
+        <Card className="bg-zinc-900 text-white shadow-lg">
+          <CardHeader>
+            <CardTitle className="text-2xl text-yellow-400">Nos Coordonnées</CardTitle>
+          </CardHeader>
+          <CardContent className="text-gray-300 text-sm leading-relaxed space-y-2">
+            <p><strong>Adresse :</strong> CAR N GO LOCATION DE VOITURE 11 Av. Lalla Amina, Salé 11000, Maroc</p>
+            <p><strong>Téléphone :</strong> <a href="tel:+212691145520" className="text-yellow-400 hover:underline">+212 691-145520</a></p>
+            <p><strong>Fix :</strong> <a href="tel:+212537866513" className="text-yellow-400 hover:underline">+212 537-866-513</a></p>
+            <p><strong>Email :</strong> <a href="mailto:carngo@gmail.com" className="text-yellow-400 hover:underline">contact@carngo.ma</a></p>
+          </CardContent>
+        </Card>
+
+        {/* Google Map */}
         <Card className="bg-zinc-900 text-white shadow-lg">
           <CardHeader>
             <CardTitle className="text-2xl text-yellow-400">Où nous trouver</CardTitle>
           </CardHeader>
           <CardContent className="text-gray-300 text-sm space-y-4">
-            <p>Nous sommes basés à Rabat, Maroc.</p>
             <div className="w-full h-[400px] rounded-lg overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.3119751050613!2d-6.8064648000000005!3d34.0358676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76b8ccc56138b%3A0xc74d7560870b1535!2sCAR%20N%20GO%20LOCATION%20DE%20VOITURE!5e0!3m2!1sfr!2sma!4v1752059510792!5m2!1sfr!2sma"
