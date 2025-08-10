@@ -10,7 +10,7 @@ export default function AboutPage() {
         {/* Logo + nom entreprise */}
         <div className="flex flex-col items-center gap-4">
           <Image
-            src="/images/logo.jpg" // Assure-toi que l'image est bien dans public/images
+            src="/images/logo.png" // Assure-toi que l'image est bien dans public/images
             alt="Logo Car N Go"
             width={120}
             height={120}

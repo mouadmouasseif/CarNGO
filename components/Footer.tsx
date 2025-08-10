@@ -8,13 +8,13 @@ export default function Footer() {
         {/* Logo et nom de la société */}
         <div className="flex items-center gap-3">
           <Image
-            src="/images/logo.jpg"
+            src="/images/logo.png"
             alt="Car N Go logo"
-            width={40}
-            height={40}
+            width={150}
+            height={150}
             className="rounded-md"
           />
-          <h1 className="text-xl font-bold text-yellow-500">CAR N GO</h1>
+          <h1 className="text-xl font-bold text-white-500">CAR N GO</h1>
         </div>
 
         {/* Liens légaux */}

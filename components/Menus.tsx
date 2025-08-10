@@ -13,11 +13,10 @@ export default function Menue() {
         <h1 className="text-2xl font-bold text-yellow-500">CAR N GO</h1>
         <div className="flex flex-col items-center gap-4">
                   <Image
-                    src="/images/logo.jpg" // Assure-toi que l'image est bien dans public/images
+                    src="/images/logo.png" // Assure-toi que l'image est bien dans public/images
                     alt="Logo Car N Go"
-                    width={70}
+                    width={90}
                     height={70}
-                    className="rounded-full border-4 border-yellow-400 shadow-md"
                   />                </div>
         <div className="lg:hidden">
           <Button variant="ghost" size="icon" onClick={() => setOpen(!open)}>

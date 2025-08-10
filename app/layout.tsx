@@ -76,9 +76,9 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/images/logo.jpg" type="image/jpg" />
-        <link rel="apple-touch-icon" href="/images/logo.jpg" />
-        <link rel="shortcut icon" href="/images/logo.jpg" />
+        <link rel="icon" href="/images/logo.png" type="imagpng" />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
+        <link rel="shortcut icon" href="/images/logo.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
       </head>
       <body
