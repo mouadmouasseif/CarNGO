@@ -34,18 +34,18 @@ export default function Footer() {
           >
             <Image
               src="/images/logo_v1.png" // à placer dans public/images/
-              alt="MMService logo"
+              alt="Made For Web"
               width={24}
               height={24}
               className="rounded"
             />
-            <span className="font-semibold">MMService</span>
+            <span className="font-semibold">Made For Web</span>
           </a>
         </div>
       </div>
 
       <p className="text-center text-xs text-gray-500 mt-6">
-        &copy;2025 Car N Go & <a href="https://www.linkedin.com/company/mm-servicese/?viewAsMember=true">MMService</a>. Tous droits réservés.
+        &copy;2025 Car N Go & <a href="https://www.linkedin.com/company/made-forweb/?viewAsMember=true">Made for Web</a>. Tous droits réservés.
       </p>
     </footer>
   );

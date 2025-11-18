@@ -98,9 +98,9 @@ export default function Contact() {
           </CardContent>
         </Card>
 
-<Card className="w-full bg-zinc-900 text-white shadow-lg">
+<Card className="w-full bg-zinc-900 text-blue-700 shadow-lg">
   <CardHeader>
-    <CardTitle className="text-3xl font-bold text-yellow-500 mb-3">Localisation</CardTitle>
+    <CardTitle className="text-3xl font-bold text-blue-500 mb-3">Localisation</CardTitle>
   </CardHeader>
   <CardContent>
     <div className="w-full h-[100px] rounded-lg overflow-hidden">
